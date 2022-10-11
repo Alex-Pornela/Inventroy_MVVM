@@ -14,6 +14,7 @@ import com.activity.myproductinventroy.R
 import com.activity.myproductinventroy.adapter.ProductAdapter
 import com.activity.myproductinventroy.databinding.ActivityMainBinding
 import com.activity.myproductinventroy.viewModel.ProductViewModel
+import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,9 +28,20 @@ class MainActivity : AppCompatActivity() {
 
         loadData()
 
-        binding.addProduct.setOnClickListener{
-            openDialog()
+        binding.apply {
+            addProduct.setOnClickListener{
+                openDialog()
+            }
+
+          /*  search.setOnClickListener{
+                CoroutineScope(Dispatchers.IO).launch{
+                    viewModel.downloadData()
+
+                }
+            }*/
         }
+
+
     }
 
     private fun loadData() {
@@ -41,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 setHasFixedSize(true)
             }
         }
-        viewModel = ViewModelProvider(this).get(ProductViewModel::class.java)
+        viewModel = ViewModelProvider(this)[ProductViewModel::class.java]
         viewModel.getProductLiveData().observe(this, Observer {
             productAdapter.submitList(it)
         })
@@ -60,7 +72,9 @@ class MainActivity : AppCompatActivity() {
         addBtn.setOnClickListener{
             val productCode = code.text.toString()
             val productName = name.text.toString()
-           // viewModel.addProduct(productCode, productName)
+            viewModel.addProduct(productCode, productName)
+            loadData()
+            dialog.dismiss()
         }
         cancel.setOnClickListener{
             dialog.dismiss()

@@ -5,8 +5,9 @@
       <map>
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/drawable/add_bg.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/drawable/ic_delete_red.xml" value="0.22291666666666668" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/layout/activity_main.xml" value="0.18568840579710144" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/layout/add_product_layout.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/layout/add_product_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/layout/download_layout.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/MyProductInventroy/app/src/main/res/layout/product_layout.xml" value="0.18115942028985507" />
       </map>
     </option>
