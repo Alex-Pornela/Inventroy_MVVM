@@ -28,8 +28,8 @@ class ProductViewModel : ViewModel(), ApiRequest.ViewData  {
 
     suspend fun downloadData(){
         //var x = 0
-        for(x in 0..1000000){
-            Log.i("tag","Downloading User $x")
+        for(i in 0..1000000){
+            Log.i("tag","Downloading User $i")
             //x++
         }
         delay(5000L)
