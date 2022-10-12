@@ -26,7 +26,7 @@ class ProductViewModel : ViewModel(), ApiRequest.ViewData  {
         repo.addProduct(productCode, productName)
     }
 
-   /* suspend fun downloadData(){
+    suspend fun downloadData(){
         var x = 0
         while(x <= 1000000){
             Log.i("tag","Downloading User $x")
@@ -34,7 +34,7 @@ class ProductViewModel : ViewModel(), ApiRequest.ViewData  {
         }
         delay(5000L)
 
-    }*/
+    }
 
 
     override fun onViewProduct(productList: List<Product>) {
