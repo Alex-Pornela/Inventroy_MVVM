@@ -30,6 +30,7 @@ class ProductViewModel : ViewModel(), ApiRequest.ViewData  {
         //var x = 0
         for(i in 0..1000000){
             Log.i("tag","Downloading User $i")
+            System.out.println("Sample")
             //x++
         }
         delay(5000L)
