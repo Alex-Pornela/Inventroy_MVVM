@@ -33,7 +33,7 @@ class ProductViewModel : ViewModel(), ApiRequest.ViewData  {
             Log.i("tag","Downloading User $x")
             x++
         }
-        delay(5000L)
+        delay(2000L)
 
     }
 
