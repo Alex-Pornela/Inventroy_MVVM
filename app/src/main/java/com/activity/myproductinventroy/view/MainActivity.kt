@@ -33,12 +33,6 @@ class MainActivity : AppCompatActivity() {
                 openDialog()
             }
 
-          /*  search.setOnClickListener{
-                CoroutineScope(Dispatchers.IO).launch{
-                    viewModel.downloadData()
-
-                }
-            }*/
         }
 
 
